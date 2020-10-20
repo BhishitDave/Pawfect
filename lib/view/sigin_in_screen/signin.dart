@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petadoption/view/sigin_in_screen/components/body.dart';
 
 class Signin extends StatefulWidget {
   @override
@@ -8,6 +9,8 @@ class Signin extends StatefulWidget {
 class _SigninState extends State<Signin> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: LoginBody(),
+    );
   }
 }

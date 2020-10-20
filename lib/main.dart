@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:petadoption/view/signin.dart';
+import 'package:petadoption/constants.dart';
+import 'package:petadoption/view/welcomescreen/welcome.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Pet App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: Signin(),
+      home: WelcomeScreen(),
     );
   }
 }
